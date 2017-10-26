@@ -11,6 +11,8 @@ class Sketch : NSObject {
     
     // Position of scond circle
     var y : Int
+    // change in postion
+    var dx : Int
     // This function runs once
     override init() {
         
@@ -22,6 +24,9 @@ class Sketch : NSObject {
         
         y = 250
         
+        //change in position
+        dx = 1
+        
         
     }
     
@@ -29,8 +34,8 @@ class Sketch : NSObject {
     func draw() {
         
         // Change position
-        x += 1
-        y -= 1
+        x += dx
+        y -= dx
         // Draw an ellipse in the middle of the canvas
         canvas.drawEllipse(centreX: x, centreY: 250, width: 50, height: 50)
         // fraw scond ellipse
@@ -45,6 +50,9 @@ class Sketch : NSObject {
         // fifth elipse
         canvas.fillColor = Color.red
         canvas.drawEllipse(centreX: x, centreY: 50, width: 50, height: 50)
+        
+        // Stop at the end
+        if x > 500{ }
     }
     
 }
