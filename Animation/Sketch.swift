@@ -52,7 +52,9 @@ class Sketch : NSObject {
         canvas.drawEllipse(centreX: x, centreY: 50, width: 50, height: 50)
         
         // Stop at the end
-        if x > 500{ }
+        if x > 480{ dx = 0 }
+        
+        if y < 20 { self.dx = 0 }
     }
     
 }
