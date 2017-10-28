@@ -48,6 +48,8 @@ class Sketch : NSObject {
         // Stop at the end
         if x > 480{ x = 0 }
         
+        
+        
     }
     
 }
