@@ -7,10 +7,15 @@ class Sketch : NSObject {
     let canvas : Canvas
     
     // Position of circle
+    
     var x : Int
+    
+    
     
     //cange in postion of circle
     var dx : Int
+    
+    
     
     // This function runs once
     override init() {
@@ -19,7 +24,7 @@ class Sketch : NSObject {
         canvas = Canvas(width: 500, height: 500)
         
         // Set starting position
-        x = 250
+     x = 20
         
         // Set change value
         dx = 2
