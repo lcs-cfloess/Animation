@@ -28,10 +28,12 @@ class Sketch : NSObject {
         // Change position
         x += 1
         
-        y = Int(a *, Double(x) * ( Double(x), -500))
+        y = Int(a * Double(x) * ( Double(x) - 450))
+        
+        canvas.translate(byX: x, byY: y)
         
         // Draw an ellipse in the middle of the canvas
-        canvas.drawEllipse(centreX: x, centreY: 250, width: 50, height: 50)
+        canvas.drawEllipse(centreX: 50, centreY:50, width: 50, height: 50)
         
     }
     
