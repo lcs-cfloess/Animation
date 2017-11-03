@@ -21,15 +21,20 @@ class Sketch : NSObject {
         x = 250
         
     
-        
+        canvas.drawShapesWithBorders = false
         
     }
     
     // Runs in a loop, forever, to create the animated effect
     func draw() {
         
-        // Change position
-        x += 1
+ // make ot stop at the end 
+        if x <= 475 {
+                   // Change position
+            x += 1
+
+        }
+        
         // Draw an ellipse in the middle of the canvas
         canvas.drawEllipse(centreX: x, centreY: 250, width: 50, height: 50)
         // fraw scond ellipse
@@ -45,8 +50,7 @@ class Sketch : NSObject {
         canvas.fillColor = Color.red
         canvas.drawEllipse(centreX: x, centreY: 50, width: 50, height: 50)
         
-        // Stop at the end
-        if x > 480{ x = 0 }
+    
         
         
         
