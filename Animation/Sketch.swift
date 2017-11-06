@@ -42,6 +42,7 @@ class Sketch : NSObject {
         
         // Change position
         x += dx
+        y += dy
         
         // Debug - what is the position?
         print("x is \(x)")
